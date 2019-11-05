@@ -32,6 +32,7 @@ class ListContacts extends React.Component {
           '"What do you call a Martian who drinks beer? An ale-ien!".',
     },
   ];
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
