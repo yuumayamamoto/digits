@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
         <footer>
           <div style={divStyle} className="ui center aligned container">
-            <hr />
+            <hr inverted />
               Department of Information and Computer Sciences <br />
               University of Hawaii<br />
               Honolulu, HI 96822 <br />
