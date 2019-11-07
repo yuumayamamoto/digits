@@ -3,7 +3,7 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /** Define a Mongo collection to hold the data. */
-const Contacts = new Mongo.Collections('Contacts');
+const Contacts = new Mongo.Collection('Contacts');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const ContactsSchema = new SimpleSchema({
