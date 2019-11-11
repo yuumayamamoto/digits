@@ -30,7 +30,9 @@ class AddContact extends React.Component {
     let fRef = null;
     return (
 
-        <AutoForm ref={ref => {fref = ref;}} schema={NotesSchema} onSubmit={data => this.submit(data, fRef)}>
+        <AutoForm ref={ref => {
+          fref = ref;
+        }} schema={NotesSchema} onSubmit={data => this.submit(data, fRef)}>
           <Segment>
             <TextField label="Add a timestamped note" name='note'/>
             <SubmitField value='Submit'/>
