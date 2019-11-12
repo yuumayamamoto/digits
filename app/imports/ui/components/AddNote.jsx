@@ -7,11 +7,10 @@ import SubmitField from 'uniforms-semantic/src/SubmitField';
 import ErrorsField from 'uniforms-semantic/src/ErrorsField';
 import swal from 'sweetalert';
 import 'uniforms-bridge-simple-schema-2';
-import { Notes, NotesSchema } from '../../api/note/Notes';
 import PropTypes from 'prop-types';
+import { Notes, NotesSchema } from '../../api/note/Notes';
 
-
-class AddContact extends React.Component {
+class AddNote extends React.Component {
   submit(data, formRef) {
     const { note, owner, contactId, createdAt } = data;
     Notes.insert({ note, owner, contactId, createdAt },
@@ -31,7 +30,7 @@ class AddContact extends React.Component {
     return (
 
         <AutoForm ref={ref => {
-          fref = ref;
+          fRef = ref;
         }} schema={NotesSchema} onSubmit={data => this.submit(data, fRef)}>
           <Segment>
             <TextField label="Add a timestamped note" name='note'/>

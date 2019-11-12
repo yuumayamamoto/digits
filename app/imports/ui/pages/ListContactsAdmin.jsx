@@ -17,7 +17,7 @@ class ListContactsAdmin extends React.Component {
   /** Render the page once subscriptions have been received. */
 
   renderPage() {
-   console.log(this.props.contacts,'Admin');
+   console.log(this.props.contacts, 'Admin');
     return (
         <Container>
           <Header as="h2" textAlign="center" inverted >List Contacts (Admin)</Header>
